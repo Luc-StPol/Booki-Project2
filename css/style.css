@@ -300,6 +300,103 @@ nav a:hover {
 
 
 
+/* Filtres */
+.infoGroup-title {
+    margin-top: 30px;
+    margin-bottom: 8px
+}
+
+.searchBar {
+    display: flex;
+}
+
+.iconLabel {
+    border: solid 1px #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    background-color: #F2F2F2;
+    padding: 15px 18px 16px 18px;
+}
+
+.fa-location-dot {
+    color: black;
+}
+
+.searchInput {
+    border: solid 1px #F2F2F2;
+    text-align: center;
+}
+
+.searchButton {
+    border: solid 1px #0065FC;
+    border-radius: 0 15px 15px 0;
+    background-color: #0065FC;
+    padding: 14px 16px;
+    color: white;
+}
+
+.searchButton-text {
+    display: flex;
+}
+
+.fa-search {
+    display: none;
+}
+
+.filtres {
+    display: flex;
+}
+.filtreCategorie {
+    display: flex;
+}
+
+.radioLabel {
+    border: solid 2px #F2F2F2;
+    border-radius: 15px;
+    padding: 15px 19px;
+    margin: 0 15px;
+}
+
+.radioLabel:hover {
+    background-color: #DEEBFF;
+}
+
+.radioInput {
+    display: none;
+}
+
+.radioInput[type=radio]:checked + label {
+    background-color: #DEEBFF;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 61px;
+    padding: 30px 0;
+}
+
+nav {
+    display: flex;
+    gap: 68px;
+}
+
+nav a {
+    padding-top: 10px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: solid 1px #0065FC
+}
+
+
+
+
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -338,6 +435,7 @@ nav a:hover {
         font-size: 13px;
     }
    
+<<<<<<< HEAD
     .activites-cards .card {
         height: 270px;
         width: 30%;
@@ -348,6 +446,8 @@ nav a:hover {
     .activites-cards .card-content {
         height: 70px;
     }
+=======
+>>>>>>> 8bb59a57b7565af807ddd9553c2ab5273235fd79
 
 
 }

@@ -296,6 +296,25 @@ nav a:hover {
     border-top: solid 1px #0065FC
 }
 
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+}
+footer section {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+footer li {
+    padding-bottom: 15px;
+}
 
 
 

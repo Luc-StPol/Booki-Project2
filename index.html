@@ -17,12 +17,79 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
 
-<body>
-    <div class="main-container">
-        <header></header>
-        <main>
-            <div class="hebergements-and-populaires">
-                <section class="hebergements">
+    <body>
+        <div class="main-container">
+            <header>
+                <div>
+                    <a href="#"><img src="images/logo/Booki.png" alt="logo"
+                            class="logo"></a>
+                </div>
+                <nav>
+                    <a href="#hebergements-and-populaires">Hébergement</a>
+                    <a href="#activites">Activités</a>
+                </nav>
+            </header>
+            <main>
+                <div class="infoGroup">
+                    <h1 class="infoGroup-title">Trouver votre hébergement pour
+                        des vacances de rêve</h1>
+                    <p>En plein-centre ville ou en pleine nature</p>
+                    <form class="formFiltre">
+                        <div class="searchBar mt-3">
+                            <label for="searchInput" class="iconLabel"><i
+                                    class="fa-solid fa-location-dot"></i></label>
+                            <input type="search" class="searchInput w-7"
+                                name="searchInput" id="searchInput">
+                            <button
+                                class="searchButton w-7"><span
+                                    class="searchButton-text">Rechercher</span><i
+                                    class="fas fa-search"></i></button>
+                        </div>
+                        <div class="filtres mt-3 w-7">
+                            <p>Filtres</p>
+                            <div class="filtreCategorie">
+                                <input type="radio" name="filtreBar"
+                                    value="economique"
+                                    id="economique" class="radioInput">
+                                <label for="economique"
+                                    class="radioLabel"><i
+                                        class="fa-solid fa-money-bill-wave"></i>
+                                    Économique</label>
+                                <input type="radio" name="filtreBar"
+                                    value="familial"
+                                    id="familial" class="radioInput">
+                                <label for="familial"
+                                    class="radioLabel"><i
+                                        class="fa-solid fa-person"></i>
+                                    Familial</label>
+                            </div>
+                            <div class="filtreCategorie">
+                                <input type="radio" name="filtreBar"
+                                    value="Romantique"
+                                    id="Romantique" class="radioInput">
+                                <label for="Romantique"
+                                    class="radioLabel"><i
+                                        class="fa-solid fa-heart"></i>
+                                    Romantique</label>
+                                <input type="radio" name="filtreBar"
+                                    value="nosPepites"
+                                    id="nosPepites" class="radioInput">
+                                <label for="nosPepites" class="radioLabel"><i
+                                        class="fa-solid fa-fire"></i> Nos
+                                    pépites</label>
+                            </div>
+
+                        </div>
+                        <p class="mt-3"><i
+                                class="fa-solid fa-circle-info"></i> Plus de 500
+                            logements sont disponibles dans cette
+                            ville</p>
+                    </form>
+                </div>
+
+                <div class="hebergements-and-populaires"
+                    id="hebergements-and-populaires">
+                    <section class="hebergements">
 
                     </section>
                     <section class="populaires">
@@ -127,15 +194,15 @@
                                                 5</span>
                                         </div>
                                     </div>
-                                </div>
-                            </article>
-                        </a>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <footer></footer>
-    </div>
-</body>
+
+                                </article>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer></footer>
+        </div>
+    </body>
 
 </html>

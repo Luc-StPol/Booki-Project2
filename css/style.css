@@ -3,6 +3,15 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.w-7 {
+    font-weight: 700;
+}
+
+
+.mt-3 {
+    margin-top: 35px;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -62,9 +71,10 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 35px;
 }
 
-.hebergements-and-populaires section {
+.hebergements, .populaires {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -76,9 +86,50 @@ a {
     width: 65%;
 }
 
+
+.hebergements-col {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+
+.hebergements-cards .card {
+    margin: 0 15px;
+    width: 30%;
+    height: 207px;
+}
+
+
+.hebergements-cards img {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0 0;
+    margin: 0 0 4px 0;
+}
+
+.hebergements-cards .card-content {
+    padding-left: 15px;
+}
+.hebergements-cards .card-title{
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+.hebergements-cards .card-rating {
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    display: flex;
+    flex-direction: column;
 }
 
 .populaires-title {
@@ -121,6 +172,132 @@ a {
     margin-bottom: 5px;
 }
 
+/* Activités */
+
+.activites-cards {
+    display: flex;
+    align-content: space-between;
+    box-sizing: content-box;
+}
+
+.activites-cards .card {
+   margin: 15px;
+   border-radius: 20px;
+   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+   width: 30%;
+   box-sizing: border-box;
+}
+
+.activites-cards img {
+    width: 100%;
+    height: 380px;
+    border-radius: 20px 20px 0 0;
+}
+
+.activites-cards .card-content {
+    display: flex;
+    align-items: center;
+    height: 59px;
+    padding: 0 19px;
+
+
+}
+
+/* Filtres */
+.infoGroup-title {
+    margin-top: 30px;
+    margin-bottom: 8px
+}
+
+.searchBar {
+    display: flex;
+}
+
+.iconLabel {
+    border: solid 1px #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    background-color: #F2F2F2;
+    padding: 15px 18px 16px 18px;
+}
+
+.fa-location-dot {
+    color: black;
+}
+
+.searchInput {
+    border: solid 1px #F2F2F2;
+    text-align: center;
+}
+
+.searchButton {
+    border: solid 1px #0065FC;
+    border-radius: 0 15px 15px 0;
+    background-color: #0065FC;
+    padding: 14px 16px;
+    color: white;
+}
+
+.searchButton-text {
+    display: flex;
+}
+
+.fa-search {
+    display: none;
+}
+
+.filtres {
+    display: flex;
+}
+.filtreCategorie {
+    display: flex;
+}
+
+.radioLabel {
+    border: solid 2px #F2F2F2;
+    border-radius: 15px;
+    padding: 15px 19px;
+    margin: 0 15px;
+}
+
+.radioLabel:hover {
+    background-color: #DEEBFF;
+}
+
+.radioInput {
+    display: none;
+}
+
+.radioInput[type=radio]:checked + label {
+    background-color: #DEEBFF;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 61px;
+    padding: 30px 0;
+}
+
+nav {
+    display: flex;
+    gap: 68px;
+}
+
+nav a {
+    padding-top: 10px;
+}
+
+nav a:hover {
+    color: #0065FC;
+    border-top: solid 1px #0065FC
+}
+
+
+
 
 
 
@@ -131,6 +308,7 @@ a {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
+        margin-top: 0;
     }
 
     .hebergements {
@@ -159,9 +337,40 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+   
+    .activites-cards .card {
+        height: 270px;
+        width: 30%;
+    }
+    .activites-cards .card img {
+        height: 200px;
+    }
+    .activites-cards .card-content {
+        height: 70px;
+    }
+
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    
+    /* Filtre */
+
+    .searchButton-text {
+        display: none;
+    }
+    .searchButton {
+        border-radius: 15px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .fa-search {
+        display: contents;
+    }
+
 }
+
+
+

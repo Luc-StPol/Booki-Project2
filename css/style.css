@@ -74,7 +74,8 @@ a {
     margin-top: 35px;
 }
 
-.hebergements, .populaires {
+.hebergements,
+.populaires {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -98,7 +99,6 @@ a {
 .hebergements-cards .card {
     margin: 0 15px;
     width: 30%;
-    height: 207px;
 }
 
 
@@ -112,7 +112,8 @@ a {
 .hebergements-cards .card-content {
     padding-left: 15px;
 }
-.hebergements-cards .card-title{
+
+.hebergements-cards .card-title {
     margin-top: 4px;
     margin-bottom: 8px;
 }
@@ -120,9 +121,9 @@ a {
 .hebergements-cards .card-subtitle {
     margin: 0;
 }
+
 .hebergements-cards .card-rating {
     margin-top: 8px;
-    margin-bottom: 15px;
 }
 
 /****** Populaires ***********/
@@ -181,11 +182,11 @@ a {
 }
 
 .activites-cards .card {
-   margin: 15px;
-   border-radius: 20px;
-   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
-   width: 30%;
-   box-sizing: border-box;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    box-sizing: border-box;
 }
 
 .activites-cards img {
@@ -248,6 +249,7 @@ a {
 .filtres {
     display: flex;
 }
+
 .filtreCategorie {
     display: flex;
 }
@@ -267,7 +269,7 @@ a {
     display: none;
 }
 
-.radioInput[type=radio]:checked + label {
+.radioInput[type=radio]:checked+label {
     background-color: #DEEBFF;
 }
 
@@ -303,6 +305,7 @@ footer {
     justify-content: space-between;
     background-color: #F2F2F2;
 }
+
 footer section {
     margin-right: auto;
     margin-left: 20px;
@@ -312,6 +315,7 @@ footer ul {
     list-style-type: none;
     padding-left: 0;
 }
+
 footer li {
     padding-bottom: 15px;
 }
@@ -356,14 +360,15 @@ footer li {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-   
+
     .activites-cards .card {
-        height: 270px;
         width: 30%;
     }
+
     .activites-cards .card img {
         height: 200px;
     }
+
     .activites-cards .card-content {
         height: 70px;
     }
@@ -388,6 +393,7 @@ footer li {
         width: 100%;
         gap: 0;
     }
+
     nav a {
         display: flex;
         justify-content: center;
@@ -397,7 +403,7 @@ footer li {
         padding-bottom: 17px;
     }
 
-    
+
     nav a:hover {
         border: none;
         border-bottom: solid 1px #0065FC;
@@ -411,14 +417,16 @@ footer li {
     .searchInput {
         width: 100%;
     }
+
     .searchButton-text {
         display: none;
     }
+
     .searchButton {
         border-radius: 15px;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     }
-    
+
     .fa-search {
         display: contents;
     }
@@ -427,36 +435,42 @@ footer li {
         flex-direction: column;
         justify-content: space-around;
     }
+
     .filtreCategorie {
         margin-top: 20px;
     }
+
     .radioLabel {
         width: 40%;
     }
-   
+
     /* hebergements et populaire */
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
+
     .hebergements {
         background-color: white;
     }
+
     .hebergements-col {
-        flex-direction: column;   
+        flex-direction: column;
         margin-bottom: 30px;
     }
-    .hebergements-cards .card {  
+
+    .hebergements-cards .card {
         width: 100%;
         padding: 0;
         margin: 0;
         margin-top: 15px;
-        
+
     }
+
     .hebergements-cards img {
-       border: solid 3px white;
-       box-sizing: border-box;
+        border: solid 3px white;
+        box-sizing: border-box;
     }
-     
+
 
     .populaires {
         width: 100%;
@@ -470,13 +484,14 @@ footer li {
 
     .populaires-cards .card {
         width: 300%;
-        
+
     }
 
     /* Activites */
     .activites {
         padding: 30px;
     }
+
     .activites-cards {
         flex-direction: column;
     }
@@ -485,21 +500,20 @@ footer li {
         margin: 0;
         margin-bottom: 50px;
         width: 100%;
-        
+
     }
+
     .activites-cards img {
         height: 141px;
         width: 100%;
     }
+
     .activites-cards .card-content {
         height: 59px;
     }
-    
+
     /* Footer */
     footer {
         flex-direction: column;
     }
 }
-
-
-
